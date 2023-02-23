@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-EmployeeSystem-8C829282-5431-4F34-AED5-CA08A913B291</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20190811132621_UserExtension.cs" />
+    <Compile Remove="Data\Migrations\20190811132621_UserExtension.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190811134321_Test.cs" />
+    <Compile Remove="Data\Migrations\20190811134321_Test.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190811140439_UserExtension.cs" />
+    <Compile Remove="Data\Migrations\20190811140439_UserExtension.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190811142118_PropertyExtension.cs" />
+    <Compile Remove="Data\Migrations\20190811142118_PropertyExtension.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190811143856_Dep.cs" />
+    <Compile Remove="Data\Migrations\20190811143856_Dep.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190811150144_Initial.cs" />
+    <Compile Remove="Data\Migrations\20190811150144_Initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190811150323_City.cs" />
+    <Compile Remove="Data\Migrations\20190811150323_City.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190811150723_DepartmentTable.cs" />
+    <Compile Remove="Data\Migrations\20190811150723_DepartmentTable.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190811152100_Foreignkey.cs" />
+    <Compile Remove="Data\Migrations\20190811152100_Foreignkey.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190811152623_Foreignkey.cs" />
+    <Compile Remove="Data\Migrations\20190811152623_Foreignkey.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190812172432_AddForeignKey.cs" />
+    <Compile Remove="Data\Migrations\20190812172432_AddForeignKey.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190812181440_DepT.cs" />
+    <Compile Remove="Data\Migrations\20190812181440_DepT.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190812190138_New.cs" />
+    <Compile Remove="Data\Migrations\20190812190138_New.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190812192432_Tester.cs" />
+    <Compile Remove="Data\Migrations\20190812192432_Tester.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190812192539_Tester.cs" />
+    <Compile Remove="Data\Migrations\20190812192539_Tester.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190812200154_Test2.cs" />
+    <Compile Remove="Data\Migrations\20190812200154_Test2.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190812201839_Test3.cs" />
+    <Compile Remove="Data\Migrations\20190812201839_Test3.Designer.cs" />
+    <Compile Remove="Migrations\20190811140529_UserExtension.cs" />
+    <Compile Remove="Migrations\20190811140529_UserExtension.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,63 @@
+﻿        @model IEnumerable<EmployeeSystem.Models.ApplicationUser>
+@{
+    ViewData["Title"] = "Employees";
+   
+}
+
+<h2>Employees</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Username
+            </th>
+
+            <th>
+                Email
+            </th>
+
+            <th>
+                Department
+            </th>
+
+        </tr>
+
+
+
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+        <tr>
+            <td>
+
+
+                @Html.DisplayFor(modelItem => item.UserName)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(modelItem => item.Email);
+
+            </td>
+
+            <td>
+
+           
+
+            </td>
+            <td>
+
+                <a asp-action="EditUser" asp-route-id="@item.Id">Edit User</a>
+
+            </td>
+
+        </tr>
+        
+        }
+
+    </tbody>
+</table>
+

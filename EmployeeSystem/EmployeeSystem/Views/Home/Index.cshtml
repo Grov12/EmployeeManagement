@@ -1,0 +1,71 @@
+﻿@model IEnumerable<EmployeeSystem.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <link href="~/css/Index_page.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+
+<div id="container" class="container">
+    <ul>
+        <tbody>
+            @foreach (var item in Model)
+            {
+        <li>
+            <div class="block-container">
+
+                <a href="#" class="text--center">
+                    @try
+                    {
+
+                        if (item.Profile.ProfileImageLink.Equals(null))
+                        {
+                            <img src="https://static.change.org/profile-img/default-user-profile.svg" class="img-responsive" alt="">
+                        }
+                        else
+                        {
+                            <img src="@item.Profile.ProfileImageLink" class="img-responsive" alt="">
+                        }
+
+                    }
+                    catch (NullReferenceException)
+                    {
+                        <img src="https://static.change.org/profile-img/default-user-profile.svg" class="img-responsive" alt="">
+                    }
+                </a>
+            </div>
+            <div class="text--center">
+
+                @Html.DisplayFor(modelItem => item.Email)
+
+            </div>
+
+            <div class="text--center">
+
+                @Html.DisplayFor(modelItem => item.Department.Departmentname)
+
+            </div>
+
+            <div class="text--center">
+
+
+                <a asp-controller="Profile" asp-action="Index" asp-route-id="@item.Id">View profile</a>
+
+            </div>
+        </li>
+
+
+
+        }
+           
+          
+            
+           
+
+
+            </tbody>
+        </ul>
+       
+    </div>

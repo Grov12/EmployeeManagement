@@ -1,0 +1,22 @@
+﻿
+.text--center {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul > li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    zoom: 1;
+    *display: inline;
+    /* this fix is needed for IE7- */
+}
+
+.block-container {
+    margin: 50px;
+}
+
+
